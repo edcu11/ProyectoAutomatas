@@ -1,0 +1,13 @@
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\bin\Debug\AutomatasNFAYDFA.exe.config
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\bin\Debug\AutomatasNFAYDFA.exe
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\bin\Debug\AutomatasNFAYDFA.pdb
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\bin\Debug\MetroFramework.Design.dll
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\bin\Debug\MetroFramework.dll
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\bin\Debug\MetroFramework.Fonts.dll
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\obj\Debug\AutomatasNFAYDFA.csprojResolveAssemblyReference.cache
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\obj\Debug\AutomatasNFAYDFA.Form1.resources
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\obj\Debug\AutomatasNFAYDFA.Properties.Resources.resources
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\obj\Debug\AutomatasNFAYDFA.csproj.GenerateResource.Cache
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\obj\Debug\AutomatasNFAYDFA.exe
+c:\users\edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\obj\Debug\AutomatasNFAYDFA.pdb
+C:\Users\Edgar\documents\visual studio 2015\Projects\AutomatasNFAYDFA\AutomatasNFAYDFA\obj\Debug\AutomatasNFAYDFA.EvualetorForm.resources
