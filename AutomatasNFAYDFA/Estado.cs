@@ -61,32 +61,71 @@ namespace AutomatasNFAYDFA
 
         public IEnumerable<Transicion> GetTransitionsWithKey(char transitionKey)
         {
-            return transiciones.Where(x => x.Key == transitionKey);
+            return transiciones.Where(x => x.Key == transitionKey).ToList();
         }
 
+        private IEnumerable<Transicion> GetTransitionsWithEpsilonAfterKey(List<Transicion> subTransiciones)
+        {
+            List<Transicion> transEpsilon = new List<Transicion>();
+
+            foreach (var subTrans in subTransiciones)
+            {
+                if (subTrans.NextState.GetAbsoluteTransitions('e') != null)
+                {
+                    transEpsilon.AddRange(null);
+                }
+            }
+
+            return transEpsilon;
+        }
+
+        private IEnumerable<Transicion> GetMyTransitionsWithEpsilonBeforeKey(char transitionKey)
+        {
+            List<Transicion> transEpsilon = new List<Transicion>();
+            List<Transicion> transicionesConEpsilonInicial = this.GetTransitionsWithKey('e').ToList();
+
+            foreach (var trans in transicionesConEpsilonInicial)
+            {
+                if (trans.NextState.GetTransitionsWithKey('e') != null)
+                {
+                    transEpsilon.AddRange(GetMyTransitionsWithEpsilonBeforeKey(transitionKey));
+                }
+                else if (trans.NextState.GetTransitionsWithKey(transitionKey) != null)
+                {
+                    transEpsilon.AddRange(trans.NextState.GetTransitionsWithKey(transitionKey));
+                }
+            }
+
+            return transEpsilon;
+        }
+        
         internal IEnumerable<char> GetKeys()
         {
             List<char> keys = new List<char>();
             foreach (var transicion in transiciones)
-            {
                 keys.Add(transicion.Key);
-            }
-
             return keys.AsEnumerable();
         }
 
         public IEnumerable<Estado> GetWaysWith(char key)
         {
-            var transicionesConKey = GetTransitionsWithKey(key);
+            IEnumerable<Transicion> transicionesConKey = GetAbsoluteTransitions(key);
             List<Estado> estados = new List<Estado>();
-
             foreach (var trans in transicionesConKey)
-            {
                 estados.Add(trans.NextState);
-            }
-
             return estados.AsEnumerable();
              
+        }
+
+        private IEnumerable<Transicion> GetAbsoluteTransitions(char key)
+        {
+            var subTransiciones = GetTransitionsWithKey(key).ToList();
+            //subTransiciones.AddRange(GetTransitionsWithEpsilonAfterKey(subTransiciones));
+            //subTransiciones.AddRange(GetMyTransitionsWithEpsilonBeforeKey(key));
+
+            return subTransiciones;
+
+
         }
     }
 }

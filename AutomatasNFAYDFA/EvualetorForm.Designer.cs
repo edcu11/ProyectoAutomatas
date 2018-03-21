@@ -76,7 +76,7 @@
             // CheckFile
             // 
             this.CheckFile.ActiveControl = null;
-            this.CheckFile.Location = new System.Drawing.Point(24, 116);
+            this.CheckFile.Location = new System.Drawing.Point(333, 78);
             this.CheckFile.Name = "CheckFile";
             this.CheckFile.Size = new System.Drawing.Size(283, 42);
             this.CheckFile.TabIndex = 2;
@@ -89,10 +89,10 @@
             // 
             this.resultsView.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.resultsView.FullRowSelect = true;
-            this.resultsView.Location = new System.Drawing.Point(340, 64);
+            this.resultsView.Location = new System.Drawing.Point(24, 144);
             this.resultsView.Name = "resultsView";
             this.resultsView.OwnerDraw = true;
-            this.resultsView.Size = new System.Drawing.Size(485, 97);
+            this.resultsView.Size = new System.Drawing.Size(592, 468);
             this.resultsView.TabIndex = 3;
             this.resultsView.UseCompatibleStateImageBehavior = false;
             this.resultsView.UseSelectable = true;
@@ -101,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 221);
+            this.ClientSize = new System.Drawing.Size(662, 665);
             this.Controls.Add(this.resultsView);
             this.Controls.Add(this.CheckFile);
             this.Controls.Add(this.metroLabel1);
